@@ -19,15 +19,16 @@
 }
 
 .nav-links {
-    font-family: librefranklinsemibold;
+    font-family: librefranklin;
     font-size: 1.3rem;
     margin: 1rem;
 }
 
 .logo {
-    height: 14vh;
+    height: 16vh;
     position: absolute;
     left: 0;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    top: 1rem;
 }
 
