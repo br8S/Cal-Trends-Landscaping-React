@@ -1,0 +1,33 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    padding: 3rem 3rem;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    height: 12vh;
+}
+
+.nav-bar {
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    padding: 1rem;
+}
+
+.nav-links {
+    font-family: librefranklinsemibold;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.logo {
+    height: 14vh;
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+}
+
