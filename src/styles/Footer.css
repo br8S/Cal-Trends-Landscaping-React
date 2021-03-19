@@ -1,0 +1,25 @@
+.footer-container {
+    height: 22vh;
+    padding: 0 10%;
+    background-image: linear-gradient(to bottom, rgb(69, 84, 74),rgb(54, 65, 58));
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    padding: 0 10%;
+}
+
+.footer-bar{
+    position: absolute;
+    right: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.logo {
+}

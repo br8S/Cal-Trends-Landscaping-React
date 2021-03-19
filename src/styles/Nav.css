@@ -1,12 +1,10 @@
 .nav-container {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: relative;
     z-index: 6;
     width: 100%;
-    padding: 3rem 3rem;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-    height: 12vh;
 }
 
 .nav-bar {
@@ -15,6 +13,7 @@
     display: flex;
     flex-direction: row;
     right: 0;
+    top: 0;
     padding: 1rem;
 }
 

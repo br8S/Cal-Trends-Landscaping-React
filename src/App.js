@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './Nav';
+import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Gallery from './Gallery';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" component={ Contact }/> 
           <Route path="/commercial" component={ Commercial }/> 
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

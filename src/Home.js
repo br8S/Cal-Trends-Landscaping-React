@@ -7,6 +7,8 @@ import imgOne from './images/pic-1.jpg';
 import imgTwo from './images/pic-2.jpg';
 import imgThree from './images/pic-3.jpg';
 
+import Footer from './Footer.js';
+
 function Home() {
     var slideIndex = 0;
 
@@ -78,7 +80,7 @@ function Home() {
                 </div>
             </header>
 
-            <section className="homeContent">
+            <div className="homeContent">
                 <div className="section-container">
                     <p className="home-motto"><span>Your perfect landscape... made a reality: </span> Whether you're updating existing landscaping or embarking on an entirely new project, we treat your vision as a work of art: beautiful, timeless, expressive.</p>
                     <div className="flex-box">
@@ -98,7 +100,7 @@ function Home() {
                             <p className="description">It's a thrill seeing your vision implemented right in front of you. Our installers are seasoned veterans with hundreds of projects just like your under their belts. </p>
                         </div>
                     </div>
-                </div>
+            
 
                 <div className="slideshow">
                     <div className="slideshow-container">
@@ -132,13 +134,9 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="section-container">
                     <p className="home-motto"><span>Our work speaks for itself.</span> We've collaborated with an array of wonderful clients on the most rewarding projects.</p>
                 </div>
-
-                
-                
-            </section>
+            </div> 
         </div>
     )
 }
