@@ -3,15 +3,71 @@ import './styles/Home.css'
 import planPic from './images/plan-pic.jpg';
 import designPic from './images/design-pic.jpg';
 import installPic from './images/install-pic.jpg';
-import imgOne from './images/gallery-1.jpg';
-import imgTwo from './images/gallery-2.jpg';
-import imgThree from './images/gallery-4.jpg';
+import imgOne from './images/pic-1.jpg';
+import imgTwo from './images/pic-2.jpg';
+import imgThree from './images/pic-3.jpg';
 
 function Home() {
+    var slideIndex = 0;
 
-    const currentSlide = () => {
-        console.log("hello")
+    const startSlide = () => {
+        var slides = document.querySelectorAll('.mySlides');
+        slides[0].style.display = "block"
     }
+
+    const showSlide = (event) => {
+        var slides = document.querySelectorAll('.mySlides');
+        var dots = document.querySelectorAll('.dot');
+
+        for(var i = 0; i < slides.length; i++){
+            if(dots[i] !== event.currentTarget){
+                slides[i].style.display = "none"
+            }
+            else {
+                slides[i].style.display = "block"
+            }
+        }
+    
+    }   
+
+    const nextSlide = () => {
+        var slides = document.querySelectorAll('.mySlides');
+
+        if((slideIndex + 1) < slides.length){
+            slideIndex += 1;
+        }
+        else{
+            slideIndex = 0;
+        }
+    
+        slides[slideIndex].style.display = "block"
+
+        for(var i = 0; i < slides.length; i++){
+            if(i !== slideIndex){
+                slides[i].style.display = "none"
+            }
+        }
+    }   
+
+    const prevSlide = () => {
+        var slides = document.querySelectorAll('.mySlides');
+
+        if((slideIndex - 1) > 0){
+            slideIndex -= 1;
+        }
+
+        else{
+            slideIndex = 2;
+        }
+    
+        slides[slideIndex].style.display = "block"
+
+        for(var i = 0; i < slides.length; i++){
+            if(i !== slideIndex){
+                slides[i].style.display = "none"
+            }
+        }
+    }  
 
     return(
         <div>
@@ -49,32 +105,37 @@ function Home() {
 
                         <div className="mySlides fade">
                             <div className="numbertext"> </div>
-                            <img className="galleryImage" src={ imgOne } alt=''></img>
+                            <img className="gallery-image" src={ imgOne }  onLoad={ startSlide } alt=''></img>
                             <div className="text"> </div>
                         </div>
         
                         <div className="mySlides fade">
                             <div className="numbertext"> </div>
-                            <img className="galleryImage" src={ imgTwo } alt=''></img>
+                            <img className="gallery-image" src={ imgTwo } alt=''></img>
                             <div className="text"> </div>
                         </div>
         
                         <div className="mySlides fade">
                             <div className="numbertext"> </div>
-                            <img className="galleryImage" src={ imgThree } alt=''></img>
+                            <img className="gallery-image" src={ imgThree } alt=''></img>
                             <div className="text"> </div>
                         </div>
         
-                        <a className="prev" onclick={ currentSlide }>&#10094;</a>
-                        <a className="next" onclick={ currentSlide }>&#10095;</a>
+                        <a className="prev" onClick={ prevSlide }>&#10094;</a>
+                        <a className="next" onClick={ nextSlide }>&#10095;</a>
                     </div>
         
                     <div className="dot-container">
-                        <span className="dot" onclick={ currentSlide }></span>
-                        <span className="dot" onclick={ currentSlide }></span>
-                        <span className="dot" onclick={ currentSlide }></span>
+                        <span className="dot" onClick={ showSlide }></span>
+                        <span className="dot" onClick={ showSlide }></span>
+                        <span className="dot" onClick={ showSlide }></span>
                     </div>
                 </div>
+
+                <div className="section-container">
+                    <p className="home-motto"><span>Our work speaks for itself.</span> We've collaborated with an array of wonderful clients on the most rewarding projects.</p>
+                </div>
+
                 
                 
             </section>
