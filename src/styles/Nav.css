@@ -18,9 +18,14 @@
 }
 
 .nav-links {
+    text-decoration: none;
     font-family: librefranklinsemibold;
     font-size: 1.1rem;
     margin: 1.4rem;
+}
+
+.nav-links:hover {
+    color: rgb(155, 155, 155);
 }
 
 .logo {

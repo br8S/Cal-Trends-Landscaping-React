@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Nav.css';
-import logo from './images/caltrendsLogo.png'
+import logo from './images/caltrendsLogo.png';
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -12,13 +13,13 @@ function Nav() {
         <div>
             <nav className="nav-container"> 
                 <div class="burger" onClick={ mobileMenu }></div>
-                <img className="logo" src={ logo } alt=''></img>
+                <Link to="/"><img className="logo" src={ logo } alt=''></img></Link>
                 <ul className="nav-bar">
-                    <li className="nav-links"> Home </li>
-                    <li className="nav-links"> About </li>
-                    <li className="nav-links"> Gallery </li>
-                    <li className="nav-links"> Commercial/Residential </li>
-                    <li className="nav-links"> Contact </li>
+                    <Link to="/"><li className="nav-links"> Home </li></Link>
+                    <Link to="/about"><li className="nav-links"> About </li></Link>
+                    <Link to="/gallery"><li className="nav-links"> Gallery </li></Link>
+                    <Link to="/commercial"><li className="nav-links"> Commercial/Residential </li></Link>
+                    <Link to="/contact"><li className="nav-links"> Contact </li></Link>
                 </ul>
             </nav>
         </div>
