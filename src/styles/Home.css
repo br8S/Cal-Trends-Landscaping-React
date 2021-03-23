@@ -204,7 +204,7 @@ span {
 
     .step-pic {
         height: fit-content;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .flex-item {
