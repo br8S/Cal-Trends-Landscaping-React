@@ -129,9 +129,11 @@ function Gallery() {
                         <span className="dot" onClick={ showSlide }></span>
                     </div>
                 </div>
-
-                <p className="home-motto"><span>Our work speaks for itself.</span> We've collaborated with an array of wonderful clients on the most rewarding projects.</p>
-                
+                <div className="homeContent">
+                    <div className="section-container">
+                        <p className="home-motto"><span>Our work speaks for itself.</span> We've collaborated with an array of wonderful clients on the most rewarding projects.</p>
+                    </div>
+                </div>
         </div>
     )
 }

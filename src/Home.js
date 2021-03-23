@@ -7,8 +7,6 @@ import imgOne from './images/pic-1.jpg';
 import imgTwo from './images/pic-2.jpg';
 import imgThree from './images/pic-3.jpg';
 
-import Footer from './Footer.js';
-
 function Home() {
     var slideIndex = 0;
 
