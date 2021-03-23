@@ -4,12 +4,16 @@ import logo from './images/caltrendsLogo.png';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+    var mobileOn = false;
 
     const closeMobileMenu = () => {
-        document.querySelector('.nav-bar').style.display = "none";
+        if(mobileOn === true){
+            document.querySelector('.nav-bar').style.display = "none";
+        }
     }
 
     const mobileMenu = () => {
+        mobileOn = true;
         document.querySelector('.nav-bar').style.display = "flex";
     }
 
