@@ -116,8 +116,8 @@ function Gallery() {
                             <div className="text"> </div>
                         </div>
         
-                        <a className="prev" onClick={ prevSlide }>&#10094;</a>
-                        <a className="next" onClick={ nextSlide }>&#10095;</a>
+                        <div className="prev" onClick={ prevSlide }>&#10094;</div>
+                        <div className="next" onClick={ nextSlide }>&#10095;</div>
                     </div>
         
                     <div className="dot-container">
