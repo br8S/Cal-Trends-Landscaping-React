@@ -70,6 +70,7 @@ span {
 .flex-item {
     display: flex;
     flex-direction: column;
+    height: fit-content;
     width: 29%;
     position: relative;
     margin: 1rem;
