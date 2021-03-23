@@ -8,7 +8,7 @@ function Commercial() {
         <div>
             <header>
                 <div className="headerContent">
-                    <h3 className="section-name">Commercial/Residential &#9473;&#9473;</h3>
+                    <h3 className="section-name">Commercial/Residential</h3>
                     <h1 className="section-title">Make your space a personal one.</h1>
                 </div>
             </header>
