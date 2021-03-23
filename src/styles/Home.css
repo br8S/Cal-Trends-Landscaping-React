@@ -203,7 +203,7 @@ span {
 @media only screen and (max-width: 1100px) {
 
     .step-pic {
-        height: auto;
+        height: fit-content;
         object-fit: contain;
     }
 
@@ -211,6 +211,7 @@ span {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: fit-content;
         position: relative;
         margin: 1rem;
     }
